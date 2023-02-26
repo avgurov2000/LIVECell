@@ -37,11 +37,11 @@ Project is created with:
 ## Loading data
 Run data load example:
 ```
-$ python3 load_data.py 
+$ python3 load_data.py --save_path=./data/coco/images
 ```
 Run annotations load example:
 ```
-$ python3 load_annotation.py 
+$ python3 load_annotation.py --save_path=./data/coco/a0 --data_path=./data/coco/images --ratio=0.2
 ```
 ## Training
 Run training script example:
