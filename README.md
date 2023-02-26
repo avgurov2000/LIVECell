@@ -53,4 +53,6 @@ $ python3 train.py --model=efficientnet-b0 --config=./configs/config_final.yaml 
 
 ## Inference
 for inference you should have onnx and ckpt data in models_arh folder with certain names (it is kind of hard code implementation, but it supposed to be an inference of already trained and prepared model =|, but these files too large forr being uploaded)
+```
 $ streamlit run ./app/main.py
+```
