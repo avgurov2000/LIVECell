@@ -35,8 +35,16 @@ Project is created with:
 * [albumentations](https://albumentations.ai/) version: 1.3.0
 
 ## Loading data
+Run data load example:
+```
+$ python3 load_data.py 
+```
+Run annotations load example:
+```
+$ python3 load_annotation.py 
+```
 ## Training
-Run training script:
+Run training script example:
 ```
 $ python3 train.py --model=efficientnet-b0 --config=./configs/config_final.yaml --batch_size=2 --epoch=25 --device=cuda --seed=1488 --num_workers=4
 ```
