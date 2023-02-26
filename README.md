@@ -35,11 +35,11 @@ Project is created with:
 * [albumentations](https://albumentations.ai/) version: 1.3.0
 
 ## Loading data
-Run data load example:
+Run data load example (save_path - path to storing downloaded images):
 ```
 $ python3 load_data.py --save_path=./data/coco/images
 ```
-Run annotations load + split example:
+Run annotations load + split example (save_path - path to storing downloaded data, data_path - path to stored inmages, ratio - test/train ratio):
 ```
 $ python3 load_annotation.py --save_path=./data/coco/a0 --data_path=./data/coco/images --ratio=0.2
 ```
@@ -47,5 +47,5 @@ $ python3 load_annotation.py --save_path=./data/coco/a0 --data_path=./data/coco/
 Run training script example:
 ```
 $ python3 train.py --model=efficientnet-b0 --config=./configs/config_final.yaml /
---batch_size=2 --epoch=25 --device=cuda --seed=1488 --num_workers=4
+		   --batch_size=2 --epoch=25 --device=cuda --seed=1488 --num_workers=4
 ```
