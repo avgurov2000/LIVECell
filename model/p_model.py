@@ -39,24 +39,24 @@ def list2dict(target_batch: List[List[torch.tensor]]) -> List[Dict[str, torch.te
 
 
 class LightningMRCNN(pl.LightningModule):
-        """
-        Lightning module of Mask RCNN
-            Attributes:
-                hyperparameters (Dict[str, float]) - base model Mask RCNN hyperparameters
-                model_name (str) - backbone name
-                model (nn.Module) - main model
-                val_evaluator (nn.Module) - evaluation metrics calculation module
-                last_learning_rate (float) - init learning rate value
-        """
+    """
+    Lightning module of Mask RCNN
+        Attributes:
+            hyperparameters (Dict[str, float]) - base model Mask RCNN hyperparameters
+            model_name (str) - backbone name
+            model (nn.Module) - main model
+            val_evaluator (nn.Module) - evaluation metrics calculation module
+            last_learning_rate (float) - init learning rate value
+    """
     
     def __init__(self, name: str, hyperparameters: object, device:torch.device) -> None:
         
         """
         Lightning module of Mask RCNN constructor
-            Arguments:
-                name (str) - backbone name
-                hyperparameters (Dict[str, float]) - base model Mask RCNN hyperparameters
-                device (nn.torch.device) - GPU/CPU/TPU device
+        Arguments:
+        name (str) - backbone name
+        hyperparameters (Dict[str, float]) - base model Mask RCNN hyperparameters
+        device (nn.torch.device) - GPU/CPU/TPU device
         """
         super().__init__()
         self.hyperparameters = hyperparameters
