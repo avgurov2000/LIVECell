@@ -62,7 +62,20 @@ Why is it needed to have .cpkt file besides .onnx model? So, I recently noticed 
 For this reason, if you deploy the .onnx model, then it will draw a bbox, sad, of course, but I didn’t come up with anything else.
 
 Below are the results of the model:
-
+initial image:
+<img
+  src="/pics/init_img.png"
+  alt="Alt text"
+  title="Optional title"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
+ 
+.onnx model output:
+<img
+  src="/pics/onnx_img.png"
+  alt="Alt text"
+  title="Optional title"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
+.ckpt model output:
 <img
   src="/pics/ckpt_img.png"
   alt="Alt text"
