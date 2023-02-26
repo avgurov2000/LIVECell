@@ -63,3 +63,8 @@ For this reason, if you deploy the .onnx model, then it will draw a bbox, sad, o
 
 Below are the results of the model:
 
+<img
+  src="/pics/ckpt_img.png"
+  alt="Alt text"
+  title="Optional title"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
