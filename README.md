@@ -60,3 +60,6 @@ $ streamlit run ./app/main.py
 ## Results
 Why is it needed to have .cpkt file besides .onnx model? So, I recently noticed that the .onnx model does not display masks, more precisely, it displays them as absolute zeros, while the model loaded from .ckpt files displays them (not entirely true, often the mask is equal to the whole space inside the bbox, there is an idea how to fix this, but hands did not reach). 
 For this reason, if you deploy the .onnx model, then it will draw a bbox, sad, of course, but I didn’t come up with anything else.
+
+Below are the results of the model:
+
