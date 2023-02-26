@@ -4,25 +4,10 @@ LIVECell dataset instance segmentation
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
+* [Loading data](#loading)
 * [Training](#training)
 
 ## General info
-This project is simple Lorem ipsum dolor generator.
-	
-## Technologies
-Project is created with:
-* [Streamlit](https://streamlit.io/) version: 1.18.1
-* [Torch](https://pytorch.org/) version: 1.13.1
-* [Torchvision](https://pytorch.org/vision/stable/index.html) version: 0.14.1
-* [Open CV](https://opencv.org/) version: 4.7.0
-* [albumentations](https://albumentations.ai/) version: 1.3.0
-	
-## Training
-To run this project, install it locally using npm:
-
-```
-$ python3 train.py --model=efficientnet-b0 --config=./configs/config_final.yaml --batch_size=2 --epoch=25 --device=cuda --seed=1488 --num_workers=4
-```
 
 #### This repo comprises following folder:
 - app - tools for deployed model 
@@ -39,3 +24,19 @@ $ python3 train.py --model=efficientnet-b0 --config=./configs/config_final.yaml 
 - train.py - train model
 
 
+
+	
+## Technologies
+Project is created with:
+* [Streamlit](https://streamlit.io/) version: 1.18.1
+* [Torch](https://pytorch.org/) version: 1.13.1
+* [Torchvision](https://pytorch.org/vision/stable/index.html) version: 0.14.1
+* [Open CV](https://opencv.org/) version: 4.7.0
+* [albumentations](https://albumentations.ai/) version: 1.3.0
+
+## Loading data
+## Training
+Run training script:
+```
+$ python3 train.py --model=efficientnet-b0 --config=./configs/config_final.yaml --batch_size=2 --epoch=25 --device=cuda --seed=1488 --num_workers=4
+```
