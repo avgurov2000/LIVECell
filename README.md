@@ -6,6 +6,7 @@ LIVECell dataset instance segmentation
 * [Technologies](#technologies)
 * [Loading data](#loading)
 * [Training](#training)
+* [Inference](#inference)
 
 ## General info
 
@@ -49,3 +50,7 @@ Run training script example:
 $ python3 train.py --model=efficientnet-b0 --config=./configs/config_final.yaml /
 		   --batch_size=2 --epoch=25 --device=cuda --seed=1488 --num_workers=4
 ```
+
+## Inference
+for inference you should have onnx and ckpt data in models_arh folder with certain names (it is kind of hard code implementation, but it supposed to be an inference of already trained and prepared model =|, but these files too large forr being uploaded)
+$ streamlit run ./app/main.py
