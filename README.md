@@ -7,6 +7,7 @@ LIVECell dataset instance segmentation
 * [Loading data](#loading)
 * [Training](#training)
 * [Inference](#inference)
+* [Results](#results)
 
 ## General info
 
@@ -52,7 +53,10 @@ $ python3 train.py --model=efficientnet-b0 --config=./configs/config_final.yaml 
 ```
 
 ## Inference
-for inference you should have onnx and ckpt data in models_arh folder with certain names (it is kind of hard code implementation, but it supposed to be an inference of already trained and prepared model =|, but these files too large forr being uploaded)
+for inference you should have .onnx and .ckpt data in models_arh folder with certain names (it is kind of hard code implementation, but it supposed to be an inference of already trained and prepared model =|, but these files too large forr being uploaded)
 ```
 $ streamlit run ./app/main.py
 ```
+## Results
+Why is it needed to have .cpkt file besides .onnx model? So, I recently noticed that the .onnx model does not display masks, more precisely, it displays them as absolute zeros, while the model loaded from .ckpt files displays them (not entirely true, often the mask is equal to the whole space inside the bbox, there is an idea how to fix this, but hands did not reach). 
+For this reason, if you deploy the .onnx model, then it will draw a bbox, sad, of course, but I didn’t come up with anything else.
