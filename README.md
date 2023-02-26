@@ -46,5 +46,6 @@ $ python3 load_annotation.py --save_path=./data/coco/a0 --data_path=./data/coco/
 ## Training
 Run training script example:
 ```
-$ python3 train.py --model=efficientnet-b0 --config=./configs/config_final.yaml --batch_size=2 --epoch=25 --device=cuda --seed=1488 --num_workers=4
+$ python3 train.py --model=efficientnet-b0 --config=./configs/config_final.yaml /
+--batch_size=2 --epoch=25 --device=cuda --seed=1488 --num_workers=4
 ```
